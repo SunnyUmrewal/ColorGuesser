@@ -1,0 +1,128 @@
+
+/* Main page */
+.game-container {
+    min-height: 100vh;
+    background: #111827;
+    color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Header */
+.game-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.game-header h1 {
+    font-size: 36px;
+    margin-bottom: 8px;
+    color: #a78bfa;
+    letter-spacing: 1px;
+}
+
+.game-header p {
+    color: #9ca3af;
+    font-size: 15px;
+}
+
+/* Card */
+.game-card {
+    width: 100%;
+    max-width: 420px;
+    background: #1f2937;
+    padding: 28px;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.game-card h2 {
+    margin: 0;
+    font-size: 23px;
+}
+
+.game-card p {
+    color: #9ca3af;
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Square color preview boxes */
+.color-box {
+    width: 200px;
+    height: 200px;
+    flex-shrink: 0;
+    border-radius: 12px;
+    border: 3px solid #374151;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+/* Color picker */
+.picker-container {
+    width: 280px;
+    max-width: 100%;
+    margin: 10px 0;
+}
+
+/* Buttons */
+.start-btn,
+.primary-btn {
+    border: none;
+    border-radius: 10px;
+    padding: 13px 28px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.start-btn {
+    background: #7c3aed;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.primary-btn {
+    width: 100%;
+    background: #8b5cf6;
+    color: white;
+}
+
+.start-btn:hover,
+.primary-btn:hover {
+    background: #6d28d9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(139, 92, 246, 0.3);
+}
+
+.start-btn:active,
+.primary-btn:active {
+    transform: scale(0.97);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .game-header h1 {
+        font-size: 28px;
+    }
+
+    .game-card {
+        padding: 20px;
+    }
+
+    .color-box {
+        width: 180px;
+        height: 180px;
+    }
+}
